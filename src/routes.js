@@ -5,7 +5,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 // какой-либо специальной обработки на уровне сервера.
 const routerHistory = createWebHashHistory()
 
-import homePage from '@/pages/home'
+import homePage from '@/pages/shop'
 import aboutPage from '@/pages/about'
 import notFoundPage from '@/pages/notFound'
 

@@ -7,13 +7,13 @@ export const site = {
 }
 
 export const app = {
-    title: 'Template'
+    title: 'Shop'
 }
 
 export const links = [
     {
-        title: 'Home',
-        alias: 'home',
+        title: 'Shop',
+        alias: 'shop',
         url: '/'
     },
     {

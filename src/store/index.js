@@ -1,23 +1,8 @@
 import { createStore } from 'vuex';
+import shop from '@/store/shop'
 
 const store = createStore({
-	//тут храним данные
-	state: {},
-
-	// меняем state function(state, payload)
-	mutations: {
-		removeNote(state, index) {}
-	},
-
-	// изменяет мутацию function(context, ...)
-	actions: {
-		removeNote(context, index) {
-			context.commit('removeNote', index);
-		}
-	},
-
-	// getName.. получаем данные из state
-	getters: {}
-});
+  modules: {shop}
+})
 
 export default store;
