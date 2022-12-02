@@ -1,9 +1,8 @@
-
 <template>
   <header class='navbar'>
     <div class='container'>
       <div class='navbar-content'>
-        <router-link class='navbar-logo' to='/'>{{ title }}</router-link>
+        <router-link class='navbar-logo' to='/shop'>{{ title }}</router-link>
         <ul class='navbar-list'>
           <li v-for='link in links' :key='link.alias' class='navbar-item'>
             <router-link :to='link.url' class='navbar-link'
@@ -11,7 +10,7 @@
             </router-link>
           </li>
           <li style='width: 40px'>
-            <a href='#' target='_blank'>
+            <a href='https://github.com/mister-Mandarin/tocode-ShopApp' target='_blank'>
               <img src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
                    alt='GitHub'>
             </a>
@@ -23,7 +22,8 @@
 </template>
 
 <script>
-import { app, links } from '@/_config';
+import {app, links} from '@/_config';
+
 export default {
   data() {
     return {

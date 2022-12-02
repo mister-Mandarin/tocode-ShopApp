@@ -1,21 +1,27 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import {createRouter, createWebHashHistory} from 'vue-router'
 
 //Он использует символ решетки ( # ) перед фактическим URL-адресом, который передается внутри.
 //Поскольку этот раздел URL-адреса никогда не отправляется на сервер, он не требует
 // какой-либо специальной обработки на уровне сервера.
 const routerHistory = createWebHashHistory()
 
-import homePage from '@/pages/shop'
+import homePage from '@/pages/Shop'
 import aboutPage from '@/pages/about'
 import notFoundPage from '@/pages/notFound'
+import Product from '@/pages/Product';
 
 const routes = createRouter({
   history: routerHistory,
   routes: [
     {
-      path: '/',
-      name: 'home',
+      path: '/shop',
+      name: 'shop',
       component: homePage
+    },
+    {
+      path: '/shop/:id',
+      name: 'product',
+      component: Product
     },
     {
       path: '/about',

@@ -1,23 +1,27 @@
 <template>
   <div class='wrapper'>
-    <Header />
+    <Header/>
     <div class='wrapper-content'>
       <section>
         <div class='container'>
           <div class='view-sm isCenter'>
-            <router-view />
+            <router-view/>
           </div>
         </div>
       </section>
     </div>
-    <Footer />
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+
 export default {
-  components: {Header, Footer}
+  components: {
+    Header,
+    Footer
+  }
 };
 </script>
